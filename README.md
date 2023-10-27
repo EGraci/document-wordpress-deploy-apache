@@ -79,3 +79,8 @@ Enable the site and reload Apache
   a2ensite [domain name].conf
   systemctl reload apache2
 ```
+### SSL https
+```
+        sudo apt install certbot python3-certbot-apache
+        sudo certbot --apache
+```
