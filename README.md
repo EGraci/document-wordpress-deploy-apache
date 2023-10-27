@@ -37,7 +37,7 @@ edit file wp-config.php
 ```
     nano /var/www/[name folder]/wordpress/wp-config.php
 ```
-get auth wordpress in this <a href="https://api.wordpress.org/secret-key/1.1/salt/"> link </a>
+get auth wordpress in this <a href="https://api.wordpress.org/secret-key/1.1/salt/"  target="_blank"> link </a>
 edit file like this
 ```
     define( 'DB_NAME', 'wp_[name site]' );
