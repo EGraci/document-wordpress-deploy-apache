@@ -12,9 +12,9 @@ add code like this
 ### configurate Mysql
 ```
     mysql
-    CREATE DATABASE wp_[name site];
-    CREATE USER 'wp_[name site]'@'%' IDENTIFIED BY '[password]';
-    GRANT ALL PRIVILEGES ON wp_[name site].* TO 'wp_[name site]'@'%' WITH GRANT OPTION;
+    CREATE DATABASE wp_[name db];
+    CREATE USER 'wp_[name user]'@'%' IDENTIFIED BY '[password]';
+    GRANT ALL PRIVILEGES ON wp_[name db].* TO 'wp_[name user]'@'%' WITH GRANT OPTION;
 ```
 
 ### configurate Wordpress
