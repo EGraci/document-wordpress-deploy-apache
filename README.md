@@ -57,9 +57,9 @@ copy this configurate
         ServerAdmin webmaster@[domain name]
         ServerName [domain name]
         ServerAlias [domain name]
-        DocumentRoot /var/www/[name folder]/wordpress
+        DocumentRoot /var/www/[name folder]/
 
-        <Directory /var/www/[name folder]/wordpress/>
+        <Directory /var/www/[name folder]/>
             Options Indexes FollowSymLinks
             AllowOverride All
             Require all granted
