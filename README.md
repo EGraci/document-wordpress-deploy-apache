@@ -31,7 +31,7 @@ change acces folder
 ```
 change file wp-config-sample.php to wp-config.php
 ```
-    mv /var/www/[name folder]/wordpress/wp-config-sample.php /var/www/[name folder]/wordpress/wp-config.php
+    mv /var/www/[name folder]/wp-config-sample.php /var/www/[name folder]/wp-config.php
 ```
 edit file wp-config.php
 ```
