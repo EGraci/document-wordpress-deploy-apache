@@ -79,9 +79,10 @@ Enable the site and reload Apache
   a2ensite [domain name].conf
   systemctl reload apache2
 ```
-Disable the site and reload Apache
+Update PHP
 ```
-a2dismod [domain name].conf
+a2dismod php[old version]
+a2enmod php[new version]
 systemctl reload apache2
 ```
 ### PHP extensions requirements cyber seo
