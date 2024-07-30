@@ -79,6 +79,11 @@ Enable the site and reload Apache
   a2ensite [domain name].conf
   systemctl reload apache2
 ```
+Disable the site and reload Apache
+```
+a2dismod [domain name].conf
+systemctl reload apache2
+```
 ### PHP extensions requirements cyber seo
 ```
 sudo apt install php php-curl php-gd php-imagick php-json php-xml php-mbstring php-zip php-mysql
