@@ -88,7 +88,7 @@ systemctl reload apache2
 ### PHP extensions requirements cyber seo
 ```
 sudo apt install php php-curl php-gd php-imagick php-json php-xml php-mbstring php-zip php-mysql
-ln -sf /etc/php/8.3/cli/php.ini /etc/php/8.3/apache2/php.ini
+ln -sf /etc/php/version/cli/php.ini /etc/php/version/apache2/php.ini
 ```
 ## PHP Incress Performce /etc/php/version/cli/php.ini
 ```
