@@ -88,6 +88,17 @@ systemctl reload apache2
 ### PHP extensions requirements cyber seo
 ```
 sudo apt install php php-curl php-gd php-imagick php-json php-xml php-mbstring php-zip php-mysql
+ln -sf /etc/php/8.3/cli/php.ini /etc/php/8.3/apache2/php.ini
+```
+## PHP Incress Performce /etc/php/version/cli/php.ini
+```
+max_execution_time = 86400 ; 24 Hour
+max_input_time = 86400 ; 24 hour
+memory_limit = 512M
+upload_max_filesize = 500M
+post_max_size = 500M
+realpath_cache_size = 4096k
+realpath_cache_ttl = 600
 ```
 ### SSL https
 ```
