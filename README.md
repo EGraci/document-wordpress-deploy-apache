@@ -87,6 +87,8 @@ sudo chmod 775 -R /var/www/folder
 !!importen after install wordpress have to change permission
 wp-config,wp-load,.htaccess 400 (for edit, change permission to 600)
 ```
+find . -type d -exec chmod 755 {} \;
+find . -type f -exec chmod 644 {} \;
 chown <username>:<username>  -R *
 chown www-data:www-data wp-content
 chmod 400 -R [wp-config.php, wp-load.php,.htaccess]
