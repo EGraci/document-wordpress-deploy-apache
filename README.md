@@ -84,6 +84,13 @@ permission folder wordpress file manager and instalasion plugin self
 sudo chown -R www-data:www-data /var/www/folder
 sudo chmod 775 -R /var/www/folder
 ```
+!!importen after install wordpress have to change permission
+wp-config,wp-load,.htaccess 400 (for edit, change permission to 600)
+```
+chown <username>:<username>  -R *
+chown www-data:www-data wp-content
+chmod 400 -R [wp-config.php, wp-load.php,.htaccess]
+```
 Update PHP
 ```
 a2dismod php[old version]
