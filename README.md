@@ -91,7 +91,6 @@ find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
 chown <username>:<username>  -R *
 chown www-data:www-data wp-content
-chmod 400 -R [wp-config.php, wp-load.php,.htaccess]
 ```
 Update PHP
 ```
