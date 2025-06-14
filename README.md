@@ -92,6 +92,18 @@ find . -type f -exec chmod 644 {} \;
 chown <username>:<username>  -R *
 chown www-data:www-data wp-content
 ```
+Plus ON Security httaccess
+```
+sudo chown <username>:<username> /var/www/[path]/.htaccess
+sudo chmod 644 /var/www/[path]/.htaccess
+sudo chmod -w /var/www/[path]/.htaccess
+sudo chattr +i /var/www/[path]/.htaccess
+```
+Plus Off Security httaccess
+```
+chattr -i /var/www/[path]/.htaccess
+chmod u+w /var/www/[path]/.htaccess
+```
 Update PHP
 ```
 a2dismod php[old version]
