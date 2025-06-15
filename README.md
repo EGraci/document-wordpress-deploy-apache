@@ -89,7 +89,6 @@ wp-config,wp-load,.htaccess 400 (for edit, change permission to 600)
 ```
 find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
-find wp-config.php -type f -exec chmod 640 {} \;
 chown <username>:<username>  -R *
 chown www-data:www-data wp-content
 ```
