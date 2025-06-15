@@ -92,6 +92,21 @@ find . -type f -exec chmod 644 {} \;
 chown <username>:<username>  -R *
 chown www-data:www-data wp-content
 ```
+Security with htaccess
+```
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+
+SetEnvIfNoCase User-Agent ([a-z0-9]{2000,}) bad_bot
+SetEnvIfNoCase User-Agent (archive.org|binlar|casper|checkpriv|choppy|clshttp|cmsworld|diavol|dotbot|extract|feedfinder|flicky|g00g1e|harvest|heritrix|httrack|kmccrew|loader|miner|nikto|nutch|planetwork|postr>
+RewriteCond %{REQUEST_URI} ^(.*)?wp-content/plugins/(.*\.php)$ [NC]
+RewriteRule ^(.*)$ - [F,L]
+RewriteCond %{REQUEST_URI} ^(.*)?wp-content/themes/(.*\.php)$ [NC]
+RewriteRule ^(.*)$ - [F,L]
+```
 Plus ON Security httaccess
 ```
 sudo chown <username>:<username> /var/www/[path]/.htaccess
