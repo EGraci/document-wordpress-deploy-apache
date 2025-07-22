@@ -123,6 +123,7 @@ Update PHP
 ```
 a2dismod php[old version]
 a2enmod php[new version]
+a2enmod rewrite
 systemctl reload apache2
 ```
 ### PHP extensions requirements cyber seo
