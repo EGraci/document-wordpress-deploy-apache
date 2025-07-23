@@ -79,6 +79,11 @@ Enable the site and reload Apache
   a2ensite [domain name].conf
   systemctl reload apache2
 ```
+Disable the site and reload 
+```
+a2dissite
+systemctl reload apache2
+```
 permission folder wordpress file manager and instalasion plugin self
 ```
 sudo chown -R www-data:www-data /var/www/folder
