@@ -151,3 +151,7 @@ realpath_cache_ttl = 600
         sudo apt install certbot python3-certbot-apache
         sudo certbot --apache
 ```
+## SSL HTTPS Specifit Domain
+```
+sudo certbot renew --cert-name my.domain.com --apache
+```
